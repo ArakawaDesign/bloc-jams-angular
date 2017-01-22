@@ -56,7 +56,12 @@
             currentBuzzObject.play();
             song.playing = true;
         };
-        
+                
+        /**
+        * @function stopSong
+        * @desc stops song and sets song.playing to null
+        * @param {Object} song
+        */
         var stopSong = function(song) {
             currentBuzzObject.stop();
             song.playing = null;
@@ -101,7 +106,11 @@
                 playSong(song);
             }
         };
-        
+                
+        /**
+        * @function next
+        * @desc plays next song
+        */
         SongPlayer.next = function() {
             var currentSongIndex = getSongIndex(SongPlayer.currentSong);
             currentSongIndex++;
