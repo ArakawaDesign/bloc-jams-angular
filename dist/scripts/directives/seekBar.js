@@ -50,6 +50,10 @@
                             $document.unbind('mouseup.thumb');
                         });
                     }
+                    
+                    scope.thumbStyle = function(event) {
+                        return {left: percentString()};
+                    }
                 }
             };
     }
